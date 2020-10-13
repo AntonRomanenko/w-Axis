@@ -1,0 +1,1 @@
+{"version":3,"file":"colors.css","sources":["colors.scss"],"sourcesContent":["$bg-basket: #d84315;\r\n$nav-hover: #d84315;\r\n$border: #2222224d;\r\n$bg-search: #d65f5fad;\r\n$color-text: #575757;\r\n$btn: #7d7d7d;\r\n$btn-bg: #f1f0f0;\r\n$bg-footer: #272727;\r\n$text: #777;"],"names":[],"mappings":""}
