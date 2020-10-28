@@ -1,3 +1,6 @@
+body {
+  font-family: 'Bebas Neue', cursive; }
+
 .wrapper {
   background-image: url("../img/bg.jpg");
   background-size: cover;
@@ -36,7 +39,7 @@
   justify-content: flex-end;
   margin: auto;
   background: black;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.690914) 0%, rgba(255, 255, 255, 0.0354517) 51%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.01) 51%);
   height: 400px;
   top: -100px;
   position: relative; }
@@ -46,15 +49,12 @@
     font-size: 21px;
     color: #fff; }
   .container__price {
-    text-align: center;
-    position: relative; }
+    display: flex;
+    align-items: end; }
   .container__price--old {
-    position: absolute;
     font-size: 24px;
     text-decoration: line-through;
-    color: #fff;
-    top: -15px;
-    right: 25px; }
+    color: #fff; }
   .container__price--new {
     font-size: 60px;
     color: #fff; }
@@ -198,5 +198,19 @@
       background: white;
       transform: translateX(50%);
       margin-top: 3px; }
+
+.log-mob {
+  display: none; }
+
+@media screen and (max-width: 1024px) {
+  .log {
+    display: none; }
+  .log-mob {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -190%;
+    transform: translate(-50%, -50%);
+    z-index: 1; } }
 
 /*# sourceMappingURL=style.css.map */

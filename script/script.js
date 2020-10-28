@@ -27,16 +27,16 @@ $(document).ready(function () {
     optionContent.innerHTML = value;
     option.append(optionContent);
     return option;
-  }
+  };
 
   // fill custom selectors with options
   const selectors = document.querySelectorAll('.customSelect ul');
   selectors.forEach(el => {
-    for (let i = 0; i < 51; i++) {
+    for (let i = 1; i < 51; i++) {
       const option = createOption(i);
       el.append(option);
     }
-  })
+  });
 
   const slideSpeed = 200;
 
