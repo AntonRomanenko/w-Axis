@@ -54,8 +54,7 @@
   align-items: center;
   justify-content: flex-end;
   margin: auto;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0.6909138655462185) 0%, rgba(255,255,255,0.03545168067226889) 51%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.01) 51%);
   height: 400px;
   top: -100px;
   position: relative;
@@ -83,7 +82,7 @@
     text-decoration: line-through;
     color: #fff;
     top: -15px;
-    right: 25px;
+    right: -25px;
   }
 
   // .container__price--new
