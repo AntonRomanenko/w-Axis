@@ -1,12 +1,9 @@
 
 
 .wrapper {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  background-image: url('/img/bg.jpg');
+  background-image: url('../img/bg.jpg');
   background-size: cover;
-  height: 1055px;
+  min-height: 100vh;
 }
 
 .content {
