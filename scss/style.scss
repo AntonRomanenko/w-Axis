@@ -28,6 +28,8 @@
     img {
       margin: auto;
       padding: 0 70px;
+      position: relative;
+      z-index: 1;
      }
   }
 
@@ -56,7 +58,6 @@
   height: 400px;
   top: -100px;
   position: relative;
-  z-index: -1;
 
   &__title {
     text-align: center;
@@ -127,10 +128,12 @@
 
 .log {
   position: absolute;
-  top:58%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  
+  top: 58%;
+  left: 2%;
+  width: 96%;
+  img {
+    width: 100%;
+  }
 }
 
 
@@ -140,6 +143,10 @@
 
 .slick-track {
   display: flex;
+}
+
+.slick-slide {
+  outline: none;
 }
 
 .slider {
@@ -176,8 +183,9 @@
 .slider .slick-dots {
   display: flex;
   position: absolute;
-  right: 6%;
+  right: 50%;
   bottom: 40px;
+  transform: translateX(50%);
 }
 
 .slider .slick-dots li {
@@ -205,6 +213,7 @@
   border: 4px solid #fff;
 }
 
+// CUSTOM SELECT ELEMENT
 .customSelect {
   position: relative;
   min-width: 80px;
@@ -222,7 +231,7 @@
     border-radius: 2px;
     top: 100%;
     left: 0;
-    max-height: 122px;
+    max-height: 110px;
     overflow: auto;
     transition: all 0.3s ease;
     li {

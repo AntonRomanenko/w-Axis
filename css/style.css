@@ -16,7 +16,9 @@
 
 .slider__item img {
   margin: auto;
-  padding: 0 70px; }
+  padding: 0 70px;
+  position: relative;
+  z-index: 1; }
 
 .slider__item--title {
   display: flex;
@@ -37,8 +39,7 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.690914) 0%, rgba(255, 255, 255, 0.0354517) 51%);
   height: 400px;
   top: -100px;
-  position: relative;
-  z-index: -1; }
+  position: relative; }
   .container__title {
     text-align: center;
     padding: 30px 5px;
@@ -80,14 +81,19 @@
 .log {
   position: absolute;
   top: 58%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
+  left: 2%;
+  width: 96%; }
+  .log img {
+    width: 100%; }
 
 .slick-list {
   overflow: hidden; }
 
 .slick-track {
   display: flex; }
+
+.slick-slide {
+  outline: none; }
 
 .slider {
   position: relative; }
@@ -118,8 +124,9 @@
 .slider .slick-dots {
   display: flex;
   position: absolute;
-  right: 6%;
-  bottom: 40px; }
+  right: 50%;
+  bottom: 40px;
+  transform: translateX(50%); }
 
 .slider .slick-dots li {
   list-style: none;
@@ -157,7 +164,7 @@
     border-radius: 2px;
     top: 100%;
     left: 0;
-    max-height: 122px;
+    max-height: 110px;
     overflow: auto;
     transition: all 0.3s ease; }
     .customSelect ul li {
